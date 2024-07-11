@@ -14,6 +14,9 @@ This project focuses on classifying Arabic sign language images using a neural n
 ## Dataset
 The dataset consists of images divided into training and testing sets. The directory structure is as follows:
 
+train/train/haik-image classification/ # Training images
+test/test/ # Testing images
+
 ## Data Preprocessing
 1. **Loading Images:** Images are loaded from the specified directories.
 2. **Resizing Images:** All images are resized to a consistent shape to feed into the neural network.
