@@ -49,13 +49,18 @@ model = YOLO("yolov8n-cls.yaml").load("yolov8n-cls.pt")  # build from YAML and t
 results = model.train(data="/kaggle/working/dataset", epochs=30, imgsz=64)
 ```
 # Validate the model
+```python
 metrics = model.val()  # no arguments needed, dataset and settings remembered
 metrics.top1  # top1 accuracy
 metrics.top5  # top5 accuracy
+```
 
 # Export the Model PyTorch Format ".pt"
+```python
 model.export()
-
+```
 # Export the model ".onnx" format
+```python
 model.export(format="onnx")
+```
 
